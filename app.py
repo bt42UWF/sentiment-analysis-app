@@ -7,13 +7,13 @@ from textblob import TextBlob
 
 # Your Bearer Token from the X API
 
-BEARER_TOKEN = st.secrets["api_key"]
+api_key = st.secrets["api_key"]
 
 # Function to get recent tweets using Twitter API v2
 def get_tweets(query, max_results=10):
     url = "https://api.twitter.com/2/tweets/search/recent"
     headers = {
-        "Authorization": f"Bearer {BEARER_TOKEN}"
+        "Authorization": f"Bearer {api_key}"
     }
     params = {
         "query": query,
