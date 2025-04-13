@@ -1,8 +1,8 @@
 import streamlit as st
 from textblob import TextBlob
 
-st.title("Sentiment Analyzer")
-st.write("Enter a sentence or paragraph to analyze its sentiment.")
+st.markdown("## 🔍 Analyze Your Text’s Sentiment")
+st.markdown("Enter anything — a tweet, comment, review, or thought — and get instant sentiment feedback.")
 
 # Text input
 user_input = st.text_input("Enter your text:")
