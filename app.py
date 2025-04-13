@@ -1,5 +1,7 @@
 import streamlit as st
 from textblob import TextBlob
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
 
 st.markdown("## 🔍 Analyze Your Text’s Sentiment")
 st.markdown("Enter anything — a tweet, comment, review, or thought — and get instant sentiment feedback.")
@@ -20,3 +22,10 @@ if user_input:
         st.error("This text is **negative** 😠")
     else:
         st.info("This text is **neutral** 😐")
+
+     wordcloud = WordCloud(width=800, height=400).generate(user_input)
+        st.markdown("### 🧠 Word Cloud")
+        fig, ax = plt.subplots()
+        ax.imshow(wordcloud, interpolation='bilinear')
+        ax.axis("off")
+        st.pyplot(fig)
