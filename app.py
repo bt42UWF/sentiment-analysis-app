@@ -2,13 +2,12 @@ import streamlit as st
 from textblob import TextBlob
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
-
-import streamlit as st
 import requests
 from textblob import TextBlob
 
 # Your Bearer Token from the X API
-BEARER_TOKEN = "YOUR_BEARER_TOKEN_HERE"
+
+BEARER_TOKEN = st.secrets["api_key"]
 
 # Function to get recent tweets using Twitter API v2
 def get_tweets(query, max_results=10):
