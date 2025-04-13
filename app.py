@@ -1,5 +1,4 @@
 import streamlit as st
-from textblob import TextBlob
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import requests
