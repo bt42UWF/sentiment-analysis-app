@@ -1,7 +1,8 @@
 streamlit
-textblob
-wordcloud
-matplotlib
-requests
 pandas
 plotly
+nltk
+textblob
+faker
+streamlit_extras
+bootstrap-icons
