@@ -5,7 +5,7 @@ from datetime import datetime
 import nltk
 import random
 from textblob import TextBlob
-from faker import Faker
+import faker
 
 nltk.download('punkt')
 
