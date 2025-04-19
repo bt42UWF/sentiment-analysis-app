@@ -5,4 +5,4 @@ nltk
 textblob
 streamlit_extras
 bootstrap-icons
-faker
+faker==37.1.0
