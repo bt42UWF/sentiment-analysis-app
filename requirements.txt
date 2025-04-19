@@ -3,6 +3,6 @@ pandas
 plotly
 nltk
 textblob
-faker
 streamlit_extras
 bootstrap-icons
+faker
